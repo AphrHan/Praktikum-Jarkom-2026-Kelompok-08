@@ -3,5 +3,5 @@
 
 ## Nama Kelompok
 - Ahmad Hanif Al-Fatih
-- Andi Abdulmalik Imaduddien
-- Nama 3
+- Andi Abdul Malik Imaduddien
+- Sintya Shavna Tamawulan
