@@ -74,3 +74,89 @@ add dst-address=192.168.20.0/24 gateway=10.10.10.2
 
 <img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/6deed057-4b95-433b-9790-5980d9b9b216" />
 
+## 3.3 Cisco Router
+
+### Konfigurasi
+
+```cisco
+interface g0/0
+ ip address 10.20.20.2 255.255.255.252
+ no shutdown
+
+interface g0/1
+ ip address 192.168.10.1 255.255.255.0
+ no shutdown
+
+ip route 0.0.0.0 0.0.0.0 10.20.20.1
+```
+
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/84705e64-63cc-445d-95b4-5c5e661402dd" />
+
+## 3.4 Client LAN
+
+### Konfigurasi
+
+| Parameter | Nilai |
+|------------|------------|
+| IP | 192.168.10.10/24 |
+| Gateway | 192.168.10.1 |
+| DNS | 8.8.8.8 |
+
+## 3.5 Client WAN
+
+### Konfigurasi
+
+| Parameter | Nilai |
+|------------|------------|
+| IP | 172.16.100.10/24 |
+| Gateway | 172.16.100.1 |
+| DNS | 8.8.8.8 |
+
+## 3.6 Ubuntu Server DMZ
+
+### Konfigurasi
+
+| Parameter | Nilai |
+|------------|------------|
+| IP | 192.168.20.10/24 |
+| Gateway | 192.168.20.1 |
+| DNS | 8.8.8.8 |
+
+### Install Nginx
+
+```bash
+sudo apt update
+sudo apt install nginx -y
+```
+
+### Halaman Web
+
+```
+Tumod_4_DMZ_Firewall_XX-KelompokXX
+```
+
+<img width="1600" height="1080" alt="image" src="https://github.com/user-attachments/assets/113ce413-aa97-4048-b004-9e28b1399548" />
+
+# 4. Hasil Uji
+
+<img width="1600" height="1100" alt="image" src="https://github.com/user-attachments/assets/67079366-141f-41d9-b010-bbc4745eac03" />
+
+<img width="1600" height="1068" alt="image" src="https://github.com/user-attachments/assets/38fdf80d-fc2d-41b0-8c9c-93689341e0c5" />
+
+<img width="1600" height="1240" alt="image" src="https://github.com/user-attachments/assets/e41a369e-f74e-4001-934d-d2c2d72579f2" />
+
+<img width="1600" height="956" alt="image" src="https://github.com/user-attachments/assets/009a9951-0e3d-4589-a1d8-572320418ebc" />
+
+<img width="1600" height="954" alt="image" src="https://github.com/user-attachments/assets/1526f936-6d16-4eeb-9c5b-1c29f881e9f1" />
+
+<img width="1600" height="1222" alt="image" src="https://github.com/user-attachments/assets/34bb2d3f-c5f5-4d9e-8d09-c99cc86e2015" />
+
+<img width="1600" height="933" alt="image" src="https://github.com/user-attachments/assets/42ea788f-a874-4462-bdef-f4e049def175" />
+
+<img width="1600" height="952" alt="image" src="https://github.com/user-attachments/assets/e5c96f96-fb6b-4d1f-8ae4-da20cc6b52f8" />
+
+<img width="1173" height="448" alt="image" src="https://github.com/user-attachments/assets/ccdcb369-ca8f-450d-8849-d761873cfcb6" />
+
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/933f5f29-b3bd-4ac6-9d11-0901690cfe8f" />
+
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/90627cd2-2029-46a0-bff0-bee6bf45fa11" />
