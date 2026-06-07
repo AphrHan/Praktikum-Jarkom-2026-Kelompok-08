@@ -44,3 +44,33 @@ add chain=srcnat out-interface=ether1 action=masquerade
 /ip route
 add dst-address=192.168.10.0/24 gateway=10.10.10.2
 add dst-address=192.168.20.0/24 gateway=10.10.10.2
+```
+
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/00340c80-9e8e-4d04-90b7-70faa3e4eb26" />
+
+
+## 3.2 FortiGate
+
+### Interface
+
+- port1 : WAN
+- port2 : INSIDE
+- port3 : DMZ
+
+### Routing
+
+- Default Route → 10.10.10.1
+- Route LAN → 10.20.20.2
+
+### Policy
+
+- LAN_TO_WAN
+- LAN_TO_DMZ
+- WAN_TO_DMZ_HTTP
+
+### VIP
+
+- 10.10.10.2 → 192.168.20.10
+
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/6deed057-4b95-433b-9790-5980d9b9b216" />
+
